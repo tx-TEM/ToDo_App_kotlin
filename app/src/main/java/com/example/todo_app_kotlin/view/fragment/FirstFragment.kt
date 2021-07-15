@@ -1,13 +1,15 @@
 package com.example.todo_app_kotlin.view.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.todo_app_kotlin.R
 import com.example.todo_app_kotlin.databinding.FragmentFirstBinding
+import com.example.todo_app_kotlin.viewModel.FirstViewModel
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -15,6 +17,7 @@ import com.example.todo_app_kotlin.databinding.FragmentFirstBinding
 class FirstFragment : Fragment() {
 
     private var _binding: FragmentFirstBinding? = null
+    private val viewModel: FirstViewModel by viewModels()
 
     // This property is only valid between onCreateView and
     // onDestroyView.
