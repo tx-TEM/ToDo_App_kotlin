@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ToDo_App_kotlin">
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.example.todo_app_kotlin.view.activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.ToDo_App_kotlin.NoActionBar">
             <intent-filter>
